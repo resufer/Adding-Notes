@@ -1,0 +1,51 @@
+.login {
+  position: relative;
+  height: calc(20vw + 140px);
+  margin: 10% auto;
+  width: 40%;
+  background-color: chartreuse	;
+}
+
+.btns {
+  width: 100%;
+  transform: translateY(-2vw);
+}
+
+.signInBtn, .signUpBtn {
+  width: 50%;
+  height: calc(2vw + 10px);
+  background-color: rgb(30, 91, 161);
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 2px rgb(13, 30, 68);
+  color: white;
+  font-size: calc(1.5vw + 5px);
+}
+
+.signInBtn:active, .signUpBtn:active {
+  box-shadow: none;
+}
+
+.signInBtn {
+  border-right: 1px solid black;
+}
+
+.signInBtn[value='true'], .signUpBtn[value='true'] {
+  background-color: #37f5e5;
+} 
+
+
+@media screen and (max-width: 800px) and (min-width: 401px) {
+  .login {
+    width: 45%;
+    height: calc(15vw + 180px);
+  }
+}
+
+
+@media screen and (max-width: 400px) and (min-width: 201px) {
+  .login {
+    width: 60%;
+    height: calc(10vw + 240px);
+  }
+}
