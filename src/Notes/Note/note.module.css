@@ -1,0 +1,120 @@
+.note {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  background-color: blueviolet;
+  margin-top: 10px;
+  height: calc(4.5vw + 70px);
+  text-overflow: clip;
+}
+
+.nameAndTime {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: calc(1vw + 10px);
+}
+
+.description {
+  font-size: calc(0.8vw + 8px);
+  width: 80%;
+  height: 50%;
+  margin-top: 20px;
+  margin-left: calc(1vw + 10px);
+  text-overflow: clip;
+}
+
+.timePassed {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  font-size: calc(1vw + 5px);
+}
+
+.timePassed[value='completed'] {
+  color: chartreuse;
+  font-weight: 500;
+}
+
+.timePassed[value='failed'] {
+  color: tomato;
+  font-weight: 500;
+}
+
+
+.btns {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 8%;
+  height: 100%;
+}
+
+.btns button {
+  font-size: calc(0.75vw + 2px);
+  width: 100%;
+  height: calc(2.25vw + 35px);
+  border: none;
+  outline: 1px solid black;
+}
+
+
+.btns button:nth-of-type(1) {
+  background-color: chartreuse;
+}
+
+.btns button:nth-of-type(2) {
+  background-color: tomato;
+}
+
+
+
+@media screen and (max-width: 800px) and (min-width: 401px) {
+  .nameAndTime {
+    font-size: calc(0.8vw + 8px);
+  }
+
+  .description {
+    font-size: calc(0.4vw + 8px);
+  }
+
+  .timePassed {
+    font-size: calc(0.8vw + 6px);
+  }
+
+  .btns {
+    width: 12%;
+  }
+
+  .btns button {
+    font-size: calc(0.75vw + 5px);
+    height: calc(2.25vw + 35px);
+  }
+}
+
+
+
+@media screen and (max-width: 400px) and (min-width: 201px) {
+  .nameAndTime {
+    font-size: calc(1.5vw + 5px);
+  }
+
+  .description {
+    font-size: calc(1.25vw + 5px);
+  }
+
+  .timePassed {
+    font-size: calc(0.8vw + 6px);
+  }
+
+  .btns {
+    width: 12.5%;
+    top: -5%;
+  }
+
+  .btns button {
+    font-size: calc(0.5vw + 5px);
+    height: 45%;
+  }
+}
