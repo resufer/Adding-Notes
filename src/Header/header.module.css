@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(114, 13, 106);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header img {
+  background: url('../images/Notes.png') 50% 50% / cover;
+  height: 7.5vh;
+  width: 50px;
+  outline: 10px solid rgb(175, 20, 162);
+}
+
+.log {
+  height: 10vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.log button {
+  width: calc(4vw + 26px);
+  height: 50%;
+  color: aliceblue;
+  background-color: rgb(114, 13, 106);
+  outline: none;
+  border: none;
+  font-size: calc(0.5vw + 10px);
+}
+
+.log button:hover {
+  animation: logout 4s 0.5s linear;
+}
+
+@keyframes logout {
+  0% {
+    box-shadow: 1px 0px 2px red, 0px 1px 2px red, -1px 0px 2px red, 0px -1px 2px red;
+  }
+  25% {
+    box-shadow: 2px 0px 2px blue, 0px 2px 2px blue, -2px 0px 2px blue, 0px -2px 2px blue;
+  }
+  50% {
+    box-shadow: 3px 0px 2px greenyellow, 0px 3px 2px greenyellow, -3px 0px 2px greenyellow, 0px -3px 2px greenyellow;
+  }
+  75% {
+    box-shadow: 4px 0px 2px silver, 0px 4px 2px silver, -4px 0px 2px silver, 0px -4px 2px silver;
+  }
+  100% {
+    box-shadow: 5px 0px 2px indigo, 0px 5px 2px indigo, -5px 0px 2px indigo, 0px -5px 2px indigo;
+  }
+}
