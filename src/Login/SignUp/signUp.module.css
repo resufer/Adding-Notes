@@ -1,0 +1,84 @@
+.upDescription {
+  font-size: calc(1.5vw + 10px);
+  font-weight: 800;
+  margin-bottom: 1.25vw;
+}
+
+.signUp {
+  width: 50%;
+  margin: 0 auto;
+  font-size: calc(1vw + 8px);
+  font-weight: 500;
+  color: #335dcf;
+}
+
+.signUp input {
+  width: 80%;
+  height: calc(1.2vw + 10px);
+}
+
+.signUp div {
+  margin-top: 10px;
+}
+
+.signUp input[type='checkbox'] {
+  width: calc(1.1vw + 10px);
+  transform: translateY(5px);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.submit {
+  float: right;
+  background-color: #7b9eff;
+  width: calc(3.5vw + 20px);
+  height: calc(1.5vw + 10px);
+  font-size: calc(0.5vw + 5px);
+  outline: none;
+  margin-top: 15px;
+}
+
+
+.message {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 50%;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: calc(1vw + 8px);
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 401px) {
+  .signUp {
+    width: 50%;
+    font-size: calc(0.8vw + 6px);
+    font-weight: 600;
+  }
+
+  .signUp input {
+    width: 88%;
+    height: calc(1vw + 10px);
+  }
+
+  .signUp input[type='checkbox'] {
+    width: calc(1vw + 8px);
+    transform: translateY(5px);
+  }
+  .submit {
+    width: calc(3vw + 20px);
+    height: calc(1.75vw + 10px);
+    font-size: calc(0.5vw + 5px);
+    margin-top: 5px;
+  }
+}
