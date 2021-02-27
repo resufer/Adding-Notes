@@ -2,7 +2,7 @@
 <hr/><br/>
 <h2>Getting Started:</h2>
 
- - <h4>Prerequisites: Node.js</h4>
+ - <h4>Prerequisites: Node.js && npm</h4>
 
 
 <h2>Installing:</h2>
